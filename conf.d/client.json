@@ -1,0 +1,20 @@
+{
+  "client": {
+    "name": "test",
+    "address": "1.2.3.4",
+    "subscriptions": [
+      "core"
+    ],
+    "keepalive": {
+      "thresholds": {
+        "warning": 180,
+        "critical": 300
+      },
+      "handlers": [
+        "pagerduty",
+        "slack"
+      ],
+      "refresh": 1800
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Ignore certs
+*.pem
+*.key
+*.crt

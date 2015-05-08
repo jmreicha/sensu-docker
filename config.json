@@ -1,0 +1,24 @@
+{
+  "transport": {
+    "reconnect_on_error": true
+  },
+  "rabbitmq": {
+    "host": "SERVER_NAME",
+    "port": 5671,
+    "vhost": "/sensu",
+    "user": "USER",
+    "password": "PASSWORD",
+    "ssl": {
+      "cert_chain_file": "/etc/sensu/ssl/cert.pem",
+      "private_key_file": "/etc/sensu/ssl/key.pem"
+    }
+  },
+  "redis": {
+    "host": "SERVER_NAME",
+    "port": 6379,
+    "reconnect_on_error": true
+  },
+  "api": {
+    "port": 4567
+  }
+}

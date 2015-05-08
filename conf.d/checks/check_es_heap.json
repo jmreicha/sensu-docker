@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "check_es_heap": {
+      "command": "/etc/sensu/plugins/check-es-heap.rb -P -w 80 -c 90",
+      "handlers": [
+        "pagerduty",
+        "slack"
+      ],
+      "subscribers": [
+        "core"
+      ],
+      "standalone": true,
+      "interval": 60,
+      "notification": "ES Heap memory usage above 90 percent",
+      "occurrences": 5
+    }
+  }
+}
