@@ -1,5 +1,4 @@
 # sensu-docker
-Run the Sensu client in a Docker container
 
 There are a few things you will need to keep in mind when working with this repo.
 
